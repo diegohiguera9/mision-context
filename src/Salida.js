@@ -9,18 +9,18 @@ const Salida = () => {
     const keys = Object.keys(salida)
 
     return (
-        <div>
+        <div className="totales">
             {`El total de votos es ${outData.outtotal}`}
             
             {values.map((item, index) => {
                 return (
                     candidatoselect.Todos ? (
-                        <div key={index}>
+                        <div className="salida" key={index}>
                             {`${item} ${outData.optionradio} votos para el candidato ${keys[index]}`}
                         </div>
                     ) :(
                         candidatoselect[keys[index]] ? (
-                            <div key={index}>
+                            <div className="salida" key={index}>
                                 {`${item} ${outData.optionradio} votos para el candidato ${keys[index]}`}
                             </div>
                         ) : <></>

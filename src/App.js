@@ -10,8 +10,11 @@ function App() {
   return (
     <CountProvider>
       <Main />
+      <div className='contenedorFlex'>
       <Radio/>
       <Salida/>
+      </div>
+      
     </CountProvider>
   );
 }
